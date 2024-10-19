@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ola.css">
+    <title>Ola Clone</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\saian\Downloads\gettyimages-522833288-612x612.jpg" alt="Ola Logo"> <!-- Ola Logo Image -->
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="my-rides.html">My Rides</a>
+            <a href="safety.html">Safety</a> <!-- Link to safety page -->
+            <a href="support.html">Support</a>
+            <a href="need-help.html">Need Help</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="booking-form">
+            <h1>Book an Ola Ride</h1>
+           
+            <input type="text" placeholder="Current Location" id="current-location">
+            <input type="text" placeholder="Enter Destination" id="destination">
+            <select id="package">
+                <option value="">Select Package</option>
+                <option value="daily">Daily</option>
+                <option value="rental">Rental</option>
+                <option value="outstation">Outstation</option>
+            </select>
+            <select id="ride-type">
+                <option value="">Select Ride Type</option>
+                <option value="mini">Mini</option>
+                <option value="sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="bike">Bike</option>
+            </select>
+            <button id="search">Search</button>
+            <div id="fare-estimate" style="display:none;">
+                <h2>Estimated Fare: <span id="fare">$0</span></h2>
+            </div>
+        </section>
+        
+        <section class="info">
+            <h2>About Ola</h2>
+            <p>Ola is one of the largest ride-hailing services in India, offering a variety of transportation options including cabs, bikes, and auto-rickshaws. The Ola app allows users to book rides instantly, estimate fares, and enjoy hassle-free travel.</p>
+            <img src="https://www.yellowslice.in/bed/wp-content/uploads/2024/07/1.-blog-11-header.jpg" alt="Ola Fleet" class="info-image"> <!-- Ola Fleet Image -->
+        </section>
+
+        <section class="app-features">
+            <h2>Ola App Features</h2>
+            <ul>
+                <li><strong>Easy Ride Booking:</strong> Book a ride in just a few taps.</li>
+                <li><strong>Fare Estimation:</strong> Get real-time fare estimates for any ride.</li>
+                <li><strong>Safety Features:</strong> Real-time tracking, emergency button, and driver details for a safer journey.</li>
+                <li><strong>Ride-Sharing:</strong> Share your ride with others and reduce travel costs.</li>
+                <li><strong>Multiple Payment Options:</strong> Pay using cash, credit card, or Ola Money.</li>
+                <li><strong>24/7 Support:</strong> Access customer support anytime within the app.</li>
+            </ul>
+            <img src="C:\Users\saian\Downloads\1370781926532620288.jpg" alt="Ola App Features" class="feature-image"> <!-- App Features Image -->
+        </section>
+
+        <section class="promotions">
+            <h2>Current Promotions</h2>
+            <p>Check out our latest offers and discounts!</p>
+            <img src="C:\Users\saian\Downloads\Ola-SEO-21.webp" alt="Promotion 1" class="promotion-image"> <!-- Promotion 1 Image -->
+            <img src="C:\Users\saian\Downloads\1534847363217.jpg" alt="Promotion 2" class="promotion-image"> <!-- Promotion 2 Image -->
+        </section>
+
+        <section class="booking-confirmation" style="display:none;">
+            <h2>Booking Confirmation</h2>
+            <p>Your ride is booked successfully!</p>
+            <p>From: <span id="from-location"></span></p>
+            <p>To: <span id="to-location"></span></p>
+            <p>Ride Type: <span id="ride"></span></p>
+            <p>Estimated Fare: <span id="final-fare"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ola Clone. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
